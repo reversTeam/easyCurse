@@ -4,9 +4,8 @@
 # include "primary.hpp"
 # include "Window.class.hpp"
 # include "Window/Module.class.hpp"
-# include "IMonitorDisplay.hpp"
 
-class Display : IMonitorDisplay {
+class Display {
 	public:
 		Display();
 		Display(Display const &o);

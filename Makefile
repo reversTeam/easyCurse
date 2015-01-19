@@ -8,7 +8,7 @@ SRC = $(shell find src -name "*.cpp")
 
 OBJ = $(SRC:.cpp=.o)
 
-NAME = modules
+NAME = easyCurses
 
 all: $(NAME)
 

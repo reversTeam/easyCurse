@@ -1,12 +1,10 @@
 #include "Display.class.hpp"
-#include "DisplayManager.hpp"
 #include <sys/ioctl.h>
 
 Display::Display():
 	_width(0),
 	_height(0)
 {
-	DisplayManager::instance()->setConsole(this);
 }
 
 Display::Display(Display const &o) {
