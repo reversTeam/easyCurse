@@ -8,6 +8,8 @@ int			main() {
 	Module		*window;
 	Percent		*rage;
 
+	Module		*submodule;
+
 	primary.init();
 
 	window = new Module("Primary Window", primary.getWindow(), primary.getWidth(), primary.getHeight(), 0, 0);
@@ -17,6 +19,10 @@ int			main() {
 		->addValue(30)
 		->addValue(40)
 	->display();
+
+	submodule = new Module("Man in the Middle", window, 40, 18, 10, 10);
+
+	submodule->printCenter("Un text de test")->apply();
 
 	primary.end();
 	return (0);
